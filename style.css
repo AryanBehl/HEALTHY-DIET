@@ -39,9 +39,9 @@ header {
     /* -webkit-background-clip: text; */
     -webkit-text-fill-color: transparent;
 }
-/* #636e72 */
+
 .tagline {
-    color: red;
+    color: #636e72;
     font-size: 0.9rem;
 }
 
