@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitPlate Pro - Diet Tracker</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+    <h1>💪 FitPlate Pro</h1>
+    <p>Track your diet, calories & macros efficiently</p>
+</header>
+
+<main>
+
+    <!-- PROFILE -->
+    <section>
+        <h2>User Profile</h2>
+
+        <form>
+
+            <div>
+                <label for="name">Name</label><br>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div>
+                <label for="goal">Goal</label><br>
+                <select id="goal" name="goal" required>
+                    <option value="">Select Goal</option>
+                    <option value="weight-loss">Weight Loss</option>
+                    <option value="maintain">Maintain</option>
+                    <option value="muscle-gain">Muscle Gain</option>
+                </select>
+            </div>
+
+            <div>
+                <button type="submit">Save Profile</button>
+            </div>
+
+        </form>
+    </section>
+
+    <!-- ADD FOOD -->
+    <section>
+        <h2>Add Food</h2>
+
+        <form>
+
+            <div>
+                <label for="foodName">Food Name</label><br>
+                <input type="text" id="foodName" name="foodName" required>
+            </div>
+
+            <div>
+                <label for="calories">Calories</label><br>
+                <input type="number" id="calories" name="calories" required min="0">
+            </div>
+
+            <div>
+                <label for="protein">Protein (g)</label><br>
+                <input type="number" id="protein" name="protein" required min="0">
+            </div>
+
+            <div>
+                <label for="carbs">Carbs (g)</label><br>
+                <input type="number" id="carbs" name="carbs" required min="0">
+            </div>
+
+            <div>
+                <label for="fats">Fats (g)</label><br>
+                <input type="number" id="fats" name="fats" required min="0">
+            </div>
+
+            <div>
+                <label for="category">Category</label><br>
+                <select id="category" name="category" required>
+                    <option value="">Select Category</option>
+                    <option value="breakfast">Breakfast</option>
+                    <option value="lunch">Lunch</option>
+                    <option value="dinner">Dinner</option>
+                    <option value="snacks">Snacks</option>
+                </select>
+            </div>
+
+            <div>
+                <button type="submit">Add Food</button>
+            </div>
+
+        </form>
+    </section>
+
+    <!-- SUMMARY -->
+    <section>
+        <h2>Daily Summary</h2>
+
+        <p>Total Calories: <strong id="totalCalories">0</strong></p>
+        <p>Protein: <strong id="totalProtein">0g</strong></p>
+        <p>Carbs: <strong id="totalCarbs">0g</strong></p>
+        <p>Fats: <strong id="totalFats">0g</strong></p>
+
+    </section>
+
+    <!-- FOOD LIST -->
+    <section>
+        <h2>Food List</h2>
+
+        <ul id="foodList">
+            <li>No food added yet</li>
+        </ul>
+
+    </section>
+
+</main>
+
+<footer>
+    <p>© 2026 FitPlate Pro</p>
+</footer>
+
+</body>
+</html>
